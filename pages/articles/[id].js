@@ -5,6 +5,7 @@ export default function Articles(props) {
   console.log(tags);
   return (
     <section>
+      <h1>WACHO</h1>
       <img src={cover_image} alt="" />
       <h1>{title}</h1>
       <ul>
