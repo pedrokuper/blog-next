@@ -1,0 +1,56 @@
+.wrapper {
+  background-color: #eef0f1;
+  overflow: hidden;
+  .postsContainer {
+    margin: auto;
+
+    width: 650px;
+
+    border-radius: 13px;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgb(214, 214, 214);
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #fff;
+      border-radius: 8px;
+
+      .postWrapper {
+        display: flex;
+        align-items: center;
+
+        .postInfo {
+          display: inline-flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 10px;
+        }
+
+        .profileImage {
+          width: 35px;
+          border-radius: 50%;
+        }
+      }
+
+      .socialContainer {
+        display: flex;
+        align-items: center;
+
+        & .reactions,
+        .comments {
+          display: flex;
+          align-items: center;
+          margin-right: 15px;
+        }
+      }
+
+      .tags {
+        color: #64707d;
+        margin-left: 0.6rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

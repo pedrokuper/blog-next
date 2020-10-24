@@ -1,0 +1,42 @@
+.sectionWrapper {
+  margin: auto;
+  max-width: 800px;
+
+  overflow: hidden;
+
+  .articleWrapper {
+    border: 1px solid rgb(238, 238, 238);
+    padding: 35px;
+    border-top: none;
+  }
+  .articleCover {
+    width: 100%;
+  }
+
+  .articleTitle {
+    font-size: 3rem;
+  }
+
+  .articleTags {
+    color: #64707d;
+    margin-right: 0.6rem;
+    cursor: pointer;
+  }
+  .articleInfo {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+
+    .userAvatar {
+      width: 40px;
+      margin-right: 10px;
+      border-radius: 50%;
+      border: 1.2px solid rgb(219, 219, 219);
+    }
+
+    &.articleDate,
+    .userName {
+      margin-right: 10px;
+    }
+  }
+}
