@@ -24,14 +24,14 @@ export default function Articles(props) {
           <span className={styles.userName}>{name}</span>
           <span className={styles.articleDate}>{date}</span>
         </div>
-        <ReactMarkdown renderers={{ image: BlogImage }}>
+
+        <ReactMarkdown escapeHtml={false} renderers={{ image: BlogImage }}>
           {content}
         </ReactMarkdown>
       </article>
     </section>
   );
 }
-
 
 const BlogImage = (props) => {
   return <img {...props} style={{ maxWidth: "100%" }} />;
